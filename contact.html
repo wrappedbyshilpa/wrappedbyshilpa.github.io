@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapped by Shilpa | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="wrappedlogo.jpeg" alt="W by S Logo" class="nav-logo">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1 class="page-title">Connect With Us</h1>
+        <p class="page-subtitle">Let's Create Something Extraordinary Together</p>
+    </div>
+
+    <main class="container">
+        <div class="contact-grid">
+            
+            <div class="contact-info">
+                <h2>Inquiry Details</h2>
+                <p style="margin-bottom: 40px; color: #555;">want a box? just fill the form out we will talk about payment and delivery!</p>
+                
+                <div class="info-item">
+                    <h4>Response Time</h4>
+                    <p>We read every message and respond within 24-48 business hours.</p>
+                </div>
+                
+                <div class="info-item">
+                    <h4>Studio Location</h4>
+                    <p>Based in the UK — Shipping from wythenshawe to anyware up to 5 miles away & Offering Local Collection.</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>Direct Email</h4>
+                    <p>wrappedbyshilpa@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div data-fs-success class="fs-success" style="display:none; margin-bottom:16px; color:green;">Thanks — your message has been sent. We'll reply soon.</div>
+                <div data-fs-error class="fs-error" style="display:none; margin-bottom:16px; color:#b00020;"></div>
+
+                <form id="contact-form" action="https://formspree.io/f/mjgzpnqg" method="POST">
+                    <input type="hidden" name="_subject" value="New Wrapped by Shilpa inquiry">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="first_name" data-fs-field required>
+                            <span data-fs-error="first_name" class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="last_name" data-fs-field required>
+                            <span data-fs-error="last_name" class="field-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" data-fs-field required>
+                        <span data-fs-error="email" class="field-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-type">Inquiry Type</label>
+                        <select id="service-type" name="inquiry_type" data-fs-field>
+                            <option value="wedding">Wedding Favors & Hampers</option>
+                            <option value="Birthday">Birthdays</option>
+                            <option value="milestone">Personalized Celebration Gift</option>
+                            <option value="other">Other / Custom Concept</option>
+                        </select>
+                        <span data-fs-error="inquiry_type" class="field-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Desired Delivery Date</label>
+                        <input type="date" id="timeline" name="delivery_date" data-fs-field>
+                        <span data-fs-error="delivery_date" class="field-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vision">Any questions? put them here with this form or any notes? if not just type N/A or nothing (please put an address of delivery with door number and postcode) we will email back at your submitted email address</label>
+                        <textarea id="vision" name="message" data-fs-field placeholder="Tell us about your colors, textures, recipients, or overall mood..."></textarea>
+                        <span data-fs-error="message" class="field-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;" data-fs-submit-btn>Submit Design Brief</button>
+                </form>
+
+                <script>
+                  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+                  formspree('initForm', { formElement: '#contact-form', formId: 'mjgzpnqg' });
+                </script>
+                <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+            </div>
+        </div>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How far in advance should I book bulk event gifts?</h3>
+                <p>For custom weddings and large corporate orders, we highly recommend getting in touch at least 4 to 6 weeks before your expected delivery date to ensure custom element sourcing runs seamlessly.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you source everything that goes inside the box?</h3>
+                <p>Yes! We offer fully curated options where we hand-select elements according to your selection, .</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wrapped by Shilpa. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
